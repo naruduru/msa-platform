@@ -1,0 +1,10 @@
+# Project exclude paths
+/.gradle/
+/msa-common/build/
+/msa-common/build/classes/java/main/
+/msa-dashboard/build/
+/msa-dashboard/build/classes/java/main/
+/msa-ladder/build/
+/msa-ladder/build/classes/java/main/
+/msa-member/build/
+/msa-member/build/classes/java/main/
