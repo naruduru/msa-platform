@@ -12,7 +12,7 @@ buildscript {
 }
 
 allprojects {
-    group 'com.mingus.world'
+    group 'com.mingus.msa'
     version '1.0-SNAPSHOT'
 }
 

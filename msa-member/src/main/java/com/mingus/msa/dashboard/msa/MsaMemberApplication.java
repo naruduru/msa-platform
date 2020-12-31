@@ -1,4 +1,4 @@
-package com.mingus.world.msa;
+package com.mingus.msa.dashboard.msa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
