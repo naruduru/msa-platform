@@ -4,6 +4,7 @@
     <select id="getDashBoardList" resultType="DashBoardVO">
         select id "seq"
               ,name "title"
+              ,'test111' "subject"
           from ladder
     </select>
 </mapper>

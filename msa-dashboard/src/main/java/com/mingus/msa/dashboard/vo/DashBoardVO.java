@@ -10,4 +10,5 @@ import lombok.RequiredArgsConstructor;
 public class DashBoardVO {
     private final int seq;
     private final String title;
+    private final String subject;
 }

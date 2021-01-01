@@ -1,11 +1,11 @@
-package com.mingus.msa.dashboard;
+package com.mingus.msa.member;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MsaLadderApplication {
+public class MsaMemberApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MsaLadderApplication.class, args);
+        SpringApplication.run(MsaMemberApplication.class, args);
     }
 }
