@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/")
+@RequestMapping("/msa/")
 @Slf4j
 public class DashBoardController {
 
@@ -22,21 +22,26 @@ public class DashBoardController {
         this.dashBoardService = dashBoardService;
     }
 
-//    @PostMapping("/dashboard")
-//    @ApiOperation(value = "Test Sample", tags = "sample")
-//    public void newDashBoard(@RequestBody DashBoardDto dashBoardDto) {
-//        log.info("newDashBoard");
-//
-//        dashBoardService.postDashboard(dashBoardDto);
-//    }
-
-    @ApiOperation(value = "exam", notes = "예제입니다.")
+    @ApiOperation(value = "newDashBoard", notes = "대시보드 생성")
     @ApiResponses({
             @ApiResponse(code = 200, message = "OK !!"),
             @ApiResponse(code = 500, message = "Internal Server Error !!"),
             @ApiResponse(code = 404, message = "Not Found !!")
     })
-    @GetMapping(value = "/board")
+    @PostMapping("/dashboard")
+    public void newDashBoard(@RequestBody DashBoardDto dashBoardDto) {
+        log.info("newDashBoard");
+
+        dashBoardService.postDashboard(dashBoardDto);
+    }
+
+    @ApiOperation(value = "getDashBoardList", notes = "대시보드 조회")
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "OK !!"),
+            @ApiResponse(code = 500, message = "Internal Server Error !!"),
+            @ApiResponse(code = 404, message = "Not Found !!")
+    })
+    @GetMapping("/dashboard")
     public List<DashBoardDto> getDashBoardList() {
         log.info("1111");
 
