@@ -56,13 +56,15 @@ subprojects {
         compile group:'org.mybatis.spring.boot',name:'mybatis-spring-boot-starter',version:'2.1.1'
         compile group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
         compile 'org.springframework.boot:spring-boot-starter-jdbc'
-        compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
-        compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+        implementation 'io.springfox:springfox-boot-starter:3.0.0'
+        implementation "io.springfox:springfox-swagger-ui:3.0.0"
     }
 }
 
 project(':msa-common') {
     dependencies {
+        compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+        compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
     }
 }
 
